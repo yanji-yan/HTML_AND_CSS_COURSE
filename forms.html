@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<form action="index.php" method="post" enctype="multipart/form-data">
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" placeholder="Enter your username"` minlength="3" maxlength="20" required><br>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Enter your password" minlength="6" maxlength="100" required><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email" required><br>
+    
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" placeholder="Enter your phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+    
+
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" required><br>
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" placeholder="Enter quantity" min="1" max="100" value="1" required><br>
+
+    <label for="title">Title:</label>
+    <input type="search" id="title" placeholder="Search for a title" required><br>
+
+    <label for="mr">Mr.:</label>
+    <input type="radio" id="mr" name="title" value="mr" required>
+
+    <label for="mrs">Mrs.:</label>
+    <input type="radio" id="mrs" name="title" value="mrs" required>
+    
+    <label for="ms">Ms.:</label>
+    <input type="radio" id="ms" name="title" value="ms" required> <br>
+
+    <label for="payment">Payment Method: </label>
+    <select id="payment" name="payment" required>
+
+    <option value="">Select a payment method</option>
+    <option value="visa">VISA</option>
+    <option value="mastercard">Mastercard</option>
+    <option value="gcash">Gcash</option>
+    </select><br>
+
+    <label for="subs">Subscribe:</label>
+    <input type="checkbox" id="subs" name="subs" value="yes"><br>
+
+    <label for="comment">Comment:</label>
+    <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Enter your comment here..."></textarea><br>
+
+    <label for="file">Upload a file:</label>
+    <input type="file" id="file" name="file" accept="image/png, image/jpeg"><br>
+
+    <input type="submit">
+    <input type="reset">
+
+</body>
+</html>
